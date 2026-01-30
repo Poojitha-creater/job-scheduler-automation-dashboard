@@ -6,3 +6,5 @@
   - Backend: Express + Prisma with job runner and webhook logging
   - Docker Compose for local development
   - Basic tests & UI polish components
+
+- PR: prepared by automated workflow. Ready for review.
