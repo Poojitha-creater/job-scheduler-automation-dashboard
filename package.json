@@ -1,0 +1,17 @@
+{
+  "name": "job-scheduler-monorepo",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "services/*"
+  ],
+  "scripts": {
+    "dev": "concurrently \"yarn workspace api dev\" \"yarn workspace web dev\"",
+    "start:docker": "docker-compose up --build",
+    "prisma:migrate": "yarn workspace api prisma migrate dev --name init",
+    "lint": "echo \"Add linter scripts\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.0.1"
+  }
+}
